@@ -1,0 +1,74 @@
+@mixin position($position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin triangle($size, $side, $colour) {
+  border: $size solid transparent;
+  border-#{$side}-color: $colour;
+}
+
+@mixin pseudoTriangle(
+  $pseudo,
+  $size,
+  $side,
+  $colour,
+  $position: absolute,
+  $top: 0,
+  $right: 0,
+  $bottom: 0,
+  $left: 0
+) {
+  position: relative;
+
+  &::#{$pseudo} {
+    content: "";
+    @include position($position, $top, $right, $bottom, $left);
+    @include triangle($size, $side, $colour);
+  }
+}
+
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position == "horizontal" {
+    left: 50%;
+    transform: translate(-50%);
+  } @else if $position == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin centerFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fontSize($size) {
+  font-size: $size * 1px;
+  font-size: ($size / 10) * 1rem;
+}
+
+@mixin media($size) {
+  @if $size == desktop {
+    @media (min-width: 721px) {@content;}
+  }
+  @else if $size == tablet {
+    @media (max-width: 720px) {@content;}
+  }
+  @else if $size == portrait {
+    @media (max-width: 530px) {@content;}
+  }
+  @else if $size == mobile {
+    @media (max-width: 450px)  {@content;}
+  }
+}

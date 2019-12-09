@@ -1,0 +1,133 @@
+@keyframes gradient {
+  0% {
+    background-color: $gradient1;
+  }
+
+  16% {
+    background-color: $gradient2;
+  }
+
+  32% {
+    background-color: $gradient3;
+  }
+
+  48% {
+    background-color: $gradient4;
+  }
+
+  64% {
+    background-color: $gradient3;
+  }
+
+  80% {
+    background-color: $gradient2;
+  }
+
+  100% {
+    background-color: $gradient1;
+  }
+}
+
+@keyframes border-snake {
+  0%,
+  100% {
+    clip: rect(0px, (600px * (1 + $clip-distance * 2)), $path-width, 0px);
+  }
+  25% {
+    clip: rect(0px, $path-width, (600px * (1 + $clip-distance * 2)), 0px);
+  }
+  50% {
+    clip: rect(
+      (600px * (1 + $clip-distance * 2)) - $path-width,
+      (600px * (1 + $clip-distance * 2)),
+      (600px * (1 + $clip-distance * 2)),
+      0px
+    );
+  }
+  75% {
+    clip: rect(
+      0px,
+      (600px * (1 + $clip-distance * 2)),
+      (600px * (1 + $clip-distance * 2)),
+      (600px * (1 + $clip-distance * 2)) - $path-width
+    );
+  }
+}
+
+@keyframes border-snake-tablet {
+  0%,
+  100% {
+    clip: rect(0px, (450px * (1 + $clip-distance * 2)), $path-width, 0px);
+  }
+  25% {
+    clip: rect(0px, $path-width, (450px * (1 + $clip-distance * 2)), 0px);
+  }
+  50% {
+    clip: rect(
+      (450px * (1 + $clip-distance * 2)) - $path-width,
+      (450px * (1 + $clip-distance * 2)),
+      (450px * (1 + $clip-distance * 2)),
+      0px
+    );
+  }
+  75% {
+    clip: rect(
+      0px,
+      (450px * (1 + $clip-distance * 2)),
+      (450px * (1 + $clip-distance * 2)),
+      (450px * (1 + $clip-distance * 2)) - $path-width
+    );
+  }
+}
+
+@keyframes border-snake-portrait {
+  0%,
+  100% {
+    clip: rect(0px, (400px * (1 + $clip-distance * 2)), $path-width, 0px);
+  }
+  25% {
+    clip: rect(0px, $path-width, (400px * (1 + $clip-distance * 2)), 0px);
+  }
+  50% {
+    clip: rect(
+      (400px * (1 + $clip-distance * 2)) - $path-width,
+      (400px * (1 + $clip-distance * 2)),
+      (400px * (1 + $clip-distance * 2)),
+      0px
+    );
+  }
+  75% {
+    clip: rect(
+      0px,
+      (400px * (1 + $clip-distance * 2)),
+      (400px * (1 + $clip-distance * 2)),
+      (400px * (1 + $clip-distance * 2)) - $path-width
+    );
+  }
+}
+
+@keyframes border-snake-mobile {
+  0%,
+  100% {
+    clip: rect(0px, (300px * (1 + $clip-distance * 2)), $path-width, 0px);
+  }
+  25% {
+    clip: rect(0px, $path-width, (300px * (1 + $clip-distance * 2)), 0px);
+  }
+  50% {
+    clip: rect(
+      (300px * (1 + $clip-distance * 2)) - $path-width,
+      (300px * (1 + $clip-distance * 2)),
+      (300px * (1 + $clip-distance * 2)),
+      0px
+    );
+  }
+  75% {
+    clip: rect(
+      0px,
+      (300px * (1 + $clip-distance * 2)),
+      (300px * (1 + $clip-distance * 2)),
+      (300px * (1 + $clip-distance * 2)) - $path-width
+    );
+  }
+}

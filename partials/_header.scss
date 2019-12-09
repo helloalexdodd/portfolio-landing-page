@@ -1,0 +1,113 @@
+header {
+  height: 100vh;
+  color: $black;
+  @include centerFlex();
+  @include fontSize(16);
+
+
+  .wrapper {
+    color: $black;
+
+    h1,
+    h2,
+    a {
+      text-align: center;
+    }
+
+    h1 {
+      @include media(portrait) {margin-top: 20px;}
+      @include media(mobile) {margin-top: 0px;}
+      @include fontSize(48);
+      @include media(tablet) {@include fontSize(40)}
+      @include media(mobile) {@include fontSize(30)}
+      font-weight: 600;
+
+      span {
+        font-weight: 300;
+        transition: transform 5s;
+      }
+    }
+
+    h2 {
+      @include fontSize(24);
+      @include media(mobile) {@include fontSize(20)}
+      font-weight: 300;
+    }
+
+    p {
+      text-align: justify;
+      width: 60%;
+      margin: 50px auto 20px;
+      @include media(mobile) {margin: 20px auto 20px;}
+      @include fontSize(16);
+      @include media(tablet) {@include fontSize(14)}
+      @include media(mobile) {@include fontSize(10)}
+      font-weight: 300;
+
+      &:last-of-type {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 600;
+
+        & a {
+          display: inline;
+          margin: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    a {
+      display: inline-block;
+      width: 100%;
+      margin: 15px 10px 0;
+      font-weight: 300;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primaryColour;
+      }
+    }
+
+    & > div {
+      text-align: center;
+      
+      a {
+        width: auto;
+        @include fontSize(24);
+      }
+    }
+
+    a:last-of-type {
+      font-weight: 600;
+    }
+  }
+
+  .animation {
+    @include position();
+    @include center(both);
+    color: rgba($primaryColour, 0.5);
+    box-shadow: inset 0 0 0 1px rgba($primaryColour, .5);
+    @include media(desktop) {height: 600px; width: 600px;}
+    @include media(tablet) {height: 450px; width: 450px;}
+    @include media(portrait) {height: 400px; width: 400px;}
+    @include media(mobile) {height: 300px; width: 300px;}
+  
+    &::before,
+    &::after {
+      @include position();
+      content: '';
+      z-index: -1;
+      margin: -1 * $clip-distance * 100%;
+      box-shadow: inset 0 0 0 $path-width; 
+      animation: border-snake $animate-time linear infinite;
+      @include media(tablet) {animation: border-snake-tablet $animate-time linear infinite;}
+      @include media(portrait) {animation: border-snake-portrait $animate-time linear infinite;}
+      @include media(mobile) {animation: border-snake-mobile $animate-time linear infinite;}
+    }
+  
+    &::before {
+      animation-delay: $animate-time * -.5;
+    }
+  }  
+}

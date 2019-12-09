@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+body {
+  font-family: $primaryFont;
+  background: $gradient1;
+	animation: gradient 20s infinite;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  @include media(tablet) {max-width: 600px}
+  @include media(portrait) {max-width: 400px}
+  @include media(mobile) {max-width: 400px}
+}
+
+*,
+h1,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
