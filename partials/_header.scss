@@ -3,6 +3,18 @@ header {
   @include centerFlex();
   @include fontSize(16);
 
+  .header-container {
+    padding: 40px;
+  }
+
+  .header-container,
+  .animation {
+    @include media(desktop) {height: 600px; width: 600px;}
+    @include media(tablet) {height: 450px; width: 450px;}
+    @include media(portrait) {height: 400px; width: 400px;}
+    @include media(mobile) {height: 300px; width: 300px;}
+  }
+
   h1,
   h2,
   .email-container {
@@ -12,17 +24,19 @@ header {
   h1 {
     @include media(portrait) {margin-top: 20px;}
     @include media(mobile) {margin-top: 0px;}
+
     @include fontSize(54);
     @include media(tablet) {@include fontSize(42)}
     @include media(grid) {@include fontSize(38)}
     @include media(mobile) {@include fontSize(26)}
-    font-family: $mediumFont;
-    letter-spacing: .5rem;
-    @include media(portrait) {letter-spacing: 0.4rem;}
-    @include media(mobile) {letter-spacing: 0.2rem;}
 
-    span {
-      font-family: $lightFont;
+    font-family: $mediumFont;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+
+    .first-name {
+      color: rgba($primaryColour, 0.7);
+      margin-right: 10px;
     }
   }
 
@@ -30,8 +44,10 @@ header {
     @include fontSize(28);
     @include media(tablet) {@include fontSize(26)}
     @include media(mobile) {@include fontSize(20)}
+
     letter-spacing: .2rem;
     @include media(tablet) {letter-spacing: 0.1rem;}
+
     font-family: $lightFont;
     color: $primaryColour;
   }
@@ -61,16 +77,19 @@ header {
     width: 60%;
     margin: 50px auto 20px;
     @include media(mobile) {margin: 20px auto 20px;}
+  
     @include fontSize(16);
     @include media(tablet) {@include fontSize(14)}
     @include media(mobile) {@include fontSize(10)}
+  
     font-weight: 300;
 
     &:last-of-type {
       margin-top: 10px;
-      text-align: center;
-      font-weight: 600;
       margin-bottom: -1rem;
+      font-family: $mediumFont;
+      font-weight: 600;
+      text-align: center;
 
       & a {
         display: inline;
@@ -89,10 +108,6 @@ header {
     background: rgba(255, 255, 255, 0.1);
     @include position();
     @include center(both);
-    @include media(desktop) {height: 600px; width: 600px;}
-    @include media(tablet) {height: 450px; width: 450px;}
-    @include media(portrait) {height: 400px; width: 400px;}
-    @include media(mobile) {height: 300px; width: 300px;}
     color: rgba($primaryColour, 0.5);
     // box-shadow: inset 0 0 0 0.5px rgba($primaryColour, .5);
     z-index: -1;
@@ -130,12 +145,9 @@ header {
       grid-template-rows: auto 0.5fr 1fr auto auto;
       @include media(portrait) {grid-template-rows: auto 1fr 1fr auto auto;}
       grid-gap: 1rem;
+      
       padding: 40px;
       @include media(tablet) {padding: 20px;}
-      @include media(desktop) {height: 600px; width: 600px;}
-      @include media(tablet) {height: 450px; width: 450px;}
-      @include media(portrait) {height: 400px; width: 400px;}
-      @include media(mobile) {height: 300px; width: 300px;}
     }
     
     h1 {
@@ -143,7 +155,8 @@ header {
       text-align: right;
       @include media(portrait) {margin-top: 0;}
       @include media(mobile) {
-        grid-column: 1 / 3;
+        grid-column: 1 / 4;
+        grid-row: 1;
         justify-self: start;
       }
     }
@@ -155,15 +168,18 @@ header {
       margin-right: -10px;
       text-align: left;
       writing-mode: vertical-lr;
+   
       @include media(portrait) {
         grid-column: 4;
         grid-row: 1 / 4;
         justify-self: start;
         font-size: 2rem;
       }
+   
       @include media(mobile) {
         grid-column: 3;
         grid-row: 1 / 6;
+        justify-self: end;
         font-size: 1.8rem;
       }
     }
@@ -172,21 +188,22 @@ header {
       margin: 0;
       width: auto;
       grid-column: 2 / 2;
-      grid-row: 3 / span 2;
+      grid-row: 3 / 5;
+      text-align: left;
+ 
       @include media(portrait) {
         grid-row: 2 / 4;
         align-self: center;
       }
-      @include media(mobile) {
-        align-self: start;
-      }
-      text-align: left;
+
+      @include media(mobile) {align-self: start;}
 
       &:last-of-type {
         width: auto;
         grid-column: 2 / 5;
         grid-row: 4;
         text-align: left;
+        
         @include media(portrait) {
           grid-column: 4 / 6;
           grid-row: 1;
@@ -194,9 +211,8 @@ header {
           margin-left: 50px;
           text-align: right; 
         }
-        @include media(mobile) {
-          grid-column: 3 / 6;
-        }
+
+        @include media(mobile) {grid-column: 3 / 6;}
       }
     }
 
@@ -205,11 +221,13 @@ header {
       grid-row: 2;
       justify-self: end;
       align-self: end;
+  
       @include media(portrait) {
         grid-column: 3 / 5;
         grid-row: 3;
         justify-self: start;
       }
+  
       @include media(mobile) {
         grid-column: 2 / 3;
         grid-row: 4;
@@ -225,9 +243,11 @@ header {
         &::after {
           content: '';
           @include position($top: -6px);
+    
           height: 4px;
           @include media(portrait) {height: 3px;}
           @include media(mobile) {height: 2px;}
+    
           width: auto;
           background: $black
         }
@@ -242,11 +262,11 @@ header {
       grid-column: 5;
       grid-row: 3 / 5;
       align-self: end;
+   
       @include media(mobile) {
         grid-column: 4 / 6;
         grid-row: 4 / 5;
         align-self: end;
-        font-size: 0.8rem;
       }
     }
   }

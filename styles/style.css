@@ -308,6 +308,254 @@ html {
   }
 }
 
+@-webkit-keyframes bottom-right-border-gradient {
+  0% {
+    border-bottom-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+  16% {
+    border-bottom-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  32% {
+    border-bottom-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  48% {
+    border-bottom-color: #fffce8;
+    border-right-color: #fffce8;
+  }
+  64% {
+    border-bottom-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  80% {
+    border-bottom-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  100% {
+    border-bottom-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+}
+
+@keyframes bottom-right-border-gradient {
+  0% {
+    border-bottom-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+  16% {
+    border-bottom-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  32% {
+    border-bottom-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  48% {
+    border-bottom-color: #fffce8;
+    border-right-color: #fffce8;
+  }
+  64% {
+    border-bottom-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  80% {
+    border-bottom-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  100% {
+    border-bottom-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+}
+
+@-webkit-keyframes top-left-border-gradient {
+  0% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+  16% {
+    border-top-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  32% {
+    border-top-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  48% {
+    border-top-color: #fffce8;
+    border-left-color: #fffce8;
+  }
+  64% {
+    border-top-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  80% {
+    border-top-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
+@keyframes top-left-border-gradient {
+  0% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+  16% {
+    border-top-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  32% {
+    border-top-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  48% {
+    border-top-color: #fffce8;
+    border-left-color: #fffce8;
+  }
+  64% {
+    border-top-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  80% {
+    border-top-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
+@-webkit-keyframes top-right-border-gradient {
+  0% {
+    border-top-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+  16% {
+    border-top-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  32% {
+    border-top-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  48% {
+    border-top-color: #fffce8;
+    border-right-color: #fffce8;
+  }
+  64% {
+    border-top-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  80% {
+    border-top-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
+@keyframes top-right-border-gradient {
+  0% {
+    border-top-color: #ebf5df;
+    border-right-color: #ebf5df;
+  }
+  16% {
+    border-top-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  32% {
+    border-top-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  48% {
+    border-top-color: #fffce8;
+    border-right-color: #fffce8;
+  }
+  64% {
+    border-top-color: #e5e9ec;
+    border-right-color: #e5e9ec;
+  }
+  80% {
+    border-top-color: #eafdf8;
+    border-right-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
+@-webkit-keyframes bottom-left-border-gradient {
+  0% {
+    border-bottom-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+  16% {
+    border-bottom-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  32% {
+    border-bottom-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  48% {
+    border-bottom-color: #fffce8;
+    border-left-color: #fffce8;
+  }
+  64% {
+    border-bottom-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  80% {
+    border-bottom-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
+@keyframes bottom-left-border-gradient {
+  0% {
+    border-bottom-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+  16% {
+    border-bottom-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  32% {
+    border-bottom-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  48% {
+    border-bottom-color: #fffce8;
+    border-left-color: #fffce8;
+  }
+  64% {
+    border-bottom-color: #e5e9ec;
+    border-left-color: #e5e9ec;
+  }
+  80% {
+    border-bottom-color: #eafdf8;
+    border-left-color: #eafdf8;
+  }
+  100% {
+    border-top-color: #ebf5df;
+    border-left-color: #ebf5df;
+  }
+}
+
 @-webkit-keyframes border-snake {
   0%,
   100% {
@@ -510,6 +758,42 @@ header {
   font-size: 1.6rem;
 }
 
+header .header-container {
+  padding: 40px;
+}
+
+@media (min-width: 1001px) {
+  header .header-container,
+  header .animation {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .header-container,
+  header .animation {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .header-container,
+  header .animation {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .header-container,
+  header .animation {
+    height: 300px;
+    width: 300px;
+  }
+}
+
 header h1,
 header h2,
 header .email-container {
@@ -520,7 +804,8 @@ header h1 {
   font-size: 54px;
   font-size: 5.4rem;
   font-family: "BrandonGrotesque-Medium", Futura, Palatino, Garamond, Bookman, sans-serif;
-  letter-spacing: .5rem;
+  text-transform: uppercase;
+  letter-spacing: -4px;
 }
 
 @media (max-width: 530px) {
@@ -556,20 +841,9 @@ header h1 {
   }
 }
 
-@media (max-width: 530px) {
-  header h1 {
-    letter-spacing: 0.4rem;
-  }
-}
-
-@media (max-width: 450px) {
-  header h1 {
-    letter-spacing: 0.2rem;
-  }
-}
-
-header h1 span {
-  font-family: "BrandonGrotesque-Light", Futura, Palatino, Garamond, Bookman, sans-serif;
+header h1 .first-name {
+  color: rgba(238, 101, 49, 0.7);
+  margin-right: 10px;
 }
 
 header h2 {
@@ -653,9 +927,10 @@ header p {
 
 header p:last-of-type {
   margin-top: 10px;
-  text-align: center;
-  font-weight: 600;
   margin-bottom: -1rem;
+  font-family: "BrandonGrotesque-Medium", Futura, Palatino, Garamond, Bookman, sans-serif;
+  font-weight: 600;
+  text-align: center;
 }
 
 header p:last-of-type a {
@@ -683,34 +958,6 @@ header .animation {
           transform: translate(-50%, -50%);
   color: rgba(238, 101, 49, 0.5);
   z-index: -1;
-}
-
-@media (min-width: 1001px) {
-  header .animation {
-    height: 600px;
-    width: 600px;
-  }
-}
-
-@media (max-width: 1000px) {
-  header .animation {
-    height: 450px;
-    width: 450px;
-  }
-}
-
-@media (max-width: 530px) {
-  header .animation {
-    height: 400px;
-    width: 400px;
-  }
-}
-
-@media (max-width: 450px) {
-  header .animation {
-    height: 300px;
-    width: 300px;
-  }
 }
 
 header .animation::before, header .animation::after {
@@ -792,30 +1039,6 @@ header .animation::before {
       padding: 20px;
     }
   }
-  @media (min-width: 1001px) {
-    header .header-container {
-      height: 600px;
-      width: 600px;
-    }
-  }
-  @media (max-width: 1000px) {
-    header .header-container {
-      height: 450px;
-      width: 450px;
-    }
-  }
-  @media (max-width: 530px) {
-    header .header-container {
-      height: 400px;
-      width: 400px;
-    }
-  }
-  @media (max-width: 450px) {
-    header .header-container {
-      height: 300px;
-      width: 300px;
-    }
-  }
   header h1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -830,8 +1053,10 @@ header .animation::before {
   @media (max-width: 450px) {
     header h1 {
       -ms-grid-column: 1;
-      -ms-grid-column-span: 2;
-      grid-column: 1 / 3;
+      -ms-grid-column-span: 3;
+      grid-column: 1 / 4;
+      -ms-grid-row: 1;
+      grid-row: 1;
       -ms-grid-column-align: start;
           justify-self: start;
     }
@@ -870,6 +1095,8 @@ header .animation::before {
       -ms-grid-row: 1;
       -ms-grid-row-span: 5;
       grid-row: 1 / 6;
+      -ms-grid-column-align: end;
+          justify-self: end;
       font-size: 1.8rem;
     }
   }
@@ -880,7 +1107,7 @@ header .animation::before {
     grid-column: 2 / 2;
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
-    grid-row: 3 / span 2;
+    grid-row: 3 / 5;
     text-align: left;
   }
   @media (max-width: 530px) {
@@ -1018,7 +1245,6 @@ header .animation::before {
       -ms-flex-item-align: end;
           -ms-grid-row-align: end;
           align-self: end;
-      font-size: 0.8rem;
     }
   }
 }
