@@ -31,10 +31,20 @@
 @keyframes border-snake {
   0%,
   100% {
-    clip: rect(0px, (600px * (1 + $clip-distance * 2)), $path-width, 0px);
+    clip: rect(
+      0px,
+      (600px * (1 + $clip-distance * 2)),
+      $path-width,
+      0px
+    );
   }
   25% {
-    clip: rect(0px, $path-width, (600px * (1 + $clip-distance * 2)), 0px);
+    clip: rect(
+      0px,
+      $path-width,
+      (600px * (1 + $clip-distance * 2)),
+      0px
+    );
   }
   50% {
     clip: rect(
@@ -57,10 +67,20 @@
 @keyframes border-snake-tablet {
   0%,
   100% {
-    clip: rect(0px, (450px * (1 + $clip-distance * 2)), $path-width, 0px);
+    clip: rect(
+      0px,
+      (450px * (1 + $clip-distance * 2)),
+      $path-width,
+      0px
+    );
   }
   25% {
-    clip: rect(0px, $path-width, (450px * (1 + $clip-distance * 2)), 0px);
+    clip: rect(
+      0px,
+      $path-width,
+      (450px * (1 + $clip-distance * 2)),
+      0px
+    );
   }
   50% {
     clip: rect(
@@ -83,10 +103,20 @@
 @keyframes border-snake-portrait {
   0%,
   100% {
-    clip: rect(0px, (400px * (1 + $clip-distance * 2)), $path-width, 0px);
+    clip: rect(
+      0px,
+      (400px * (1 + $clip-distance * 2)),
+      $path-width,
+      0px
+    );
   }
   25% {
-    clip: rect(0px, $path-width, (400px * (1 + $clip-distance * 2)), 0px);
+    clip: rect(
+      0px,
+      $path-width,
+      (400px * (1 + $clip-distance * 2)),
+      0px
+    );
   }
   50% {
     clip: rect(
@@ -109,10 +139,20 @@
 @keyframes border-snake-mobile {
   0%,
   100% {
-    clip: rect(0px, (300px * (1 + $clip-distance * 2)), $path-width, 0px);
+    clip: rect(
+      0px,
+      (300px * (1 + $clip-distance * 2)),
+      $path-width,
+      0px
+    );
   }
   25% {
-    clip: rect(0px, $path-width, (300px * (1 + $clip-distance * 2)), 0px);
+    clip: rect(
+      0px,
+      $path-width,
+      (300px * (1 + $clip-distance * 2)),
+      0px
+    );
   }
   50% {
     clip: rect(
