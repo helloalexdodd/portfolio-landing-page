@@ -6,7 +6,8 @@ html {
 body {
   font-family: $primaryFont;
   background: $gradient1;
-	animation: gradient 20s infinite;
+  animation: gradient 20s infinite;
+  color: $black;
 }
 
 .wrapper {

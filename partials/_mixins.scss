@@ -60,10 +60,10 @@
 
 @mixin media($size) {
   @if $size == desktop {
-    @media (min-width: 721px) {@content;}
+    @media (min-width: 1001px) {@content;}
   }
   @else if $size == tablet {
-    @media (max-width: 720px) {@content;}
+    @media (max-width: 1000px) {@content;}
   }
   @else if $size == portrait {
     @media (max-width: 530px) {@content;}
