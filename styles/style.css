@@ -728,6 +728,13 @@ header .animation::before {
     bottom: auto;
     left: auto;
   }
+  @media (max-width: 720px) {
+    header .header-container,
+    header .animation {
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
   header .header-container {
     display: -ms-grid;
     display: grid;

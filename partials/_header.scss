@@ -112,7 +112,8 @@ header {
     .header-container,
     .animation {
       transform: rotate(-45deg);
-      @include position($top: auto, $right: auto, $bottom: auto, $left: auto)
+      @include position($top: auto, $right: auto, $bottom: auto, $left: auto);
+      @include media(grid) {transform: none;}
     }
 
 

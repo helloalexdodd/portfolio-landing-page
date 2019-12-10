@@ -65,6 +65,9 @@
   @else if $size == tablet {
     @media (max-width: 1000px) {@content;}
   }
+  @else if $size == grid {
+    @media (max-width: 720px) {@content;}
+  }
   @else if $size == portrait {
     @media (max-width: 530px) {@content;}
   }
