@@ -11,17 +11,7 @@
   border-#{$side}-color: $colour;
 }
 
-@mixin pseudoTriangle(
-  $pseudo,
-  $size,
-  $side,
-  $colour,
-  $position: absolute,
-  $top: 0,
-  $right: 0,
-  $bottom: 0,
-  $left: 0
-) {
+@mixin pseudoTriangle($pseudo, $size, $side, $colour, $position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: relative;
 
   &::#{$pseudo} {
