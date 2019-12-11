@@ -5,6 +5,7 @@ header {
 
   .header-container {
     padding: 40px;
+    @include media(portrait) {padding: 20px}
   }
 
   .header-container,
@@ -22,7 +23,8 @@ header {
   }
 
   h1 {
-    @include media(portrait) {margin-top: 20px;}
+    @include media(desktop) {margin-top: 50px;}
+    @include media(portrait) {margin-top: 0px;}
     @include media(mobile) {margin-top: 0px;}
 
     @include fontSize(54);
@@ -80,7 +82,7 @@ header {
   
     @include fontSize(16);
     @include media(tablet) {@include fontSize(14)}
-    @include media(mobile) {@include fontSize(10)}
+    @include media(mobile) {@include fontSize(11)}
   
     font-weight: 300;
 
@@ -109,7 +111,6 @@ header {
     @include position();
     @include center(both);
     color: rgba($primaryColour, 0.5);
-    // box-shadow: inset 0 0 0 0.5px rgba($primaryColour, .5);
     z-index: -1;
   
     &::before,
