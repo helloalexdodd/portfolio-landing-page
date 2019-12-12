@@ -65,8 +65,8 @@
         grid-row: 3 / 5;
         align-self: center;
       }
-
       @include media(mobile) {align-self: start;}
+
 
       &:last-of-type {
         width: auto;
