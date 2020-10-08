@@ -12,7 +12,10 @@
     "autoprefixer": "^9.7.3",
     "cssnano": "^4.1.10",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "yargs-parser": ">=13.1.2",
+    "node-sass": ">=4.13.1",
+    "lodash": ">=4.17.19"
   },
   "dependencies": {
     "gulp": "^4.0.2"
