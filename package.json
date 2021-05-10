@@ -15,7 +15,7 @@
     "gulp-sass": "^4.0.2",
     "yargs-parser": ">=13.1.2",
     "node-sass": ">=4.13.1",
-    "lodash": ">=4.17.19",
+    "lodash": ">=4.17.21",
     "dot-prop": ">=4.2.1",
     "kind-of": ">=6.0.3"
   },
