@@ -14,7 +14,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "yargs-parser": ">=13.1.2",
-    "node-sass": ">=4.13.1",
+    "node-sass": ">=7.0.0",
     "lodash": ">=4.17.19",
     "dot-prop": ">=4.2.1",
     "kind-of": ">=6.0.3"
